@@ -82,12 +82,15 @@ aside{
     width: 20%;
     background-color: rgb(148, 129, 252);
 }
+aside h1{
+    padding: 10px;
+}
 aside div{
     background-color: rgb(57, 31, 231);
     width: 150px;
     height: 150px;
-    padding: 50 px;
-    margin: 50px;
+    padding: 30 px;
+    margin: 25px;
 }
 footer{
     background-color: lightblue;
