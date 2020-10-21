@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Tienda de deportes</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Tienda de deportes">  
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>  
+  <body>    
+    <header>
+      <a id="logo" href="index.html"><img src="/images/logo.png" alt="logo"></a>
+      <h1>Tienda de deportes</h1>      
+    </header><br/><br/>    
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+      <a href="#">Iniciar Sesión</a>
+      <a href="nuevo-usuario.html">Nuevo Usuario</a>
+    </nav><br/><br/>
+    <section id="formu">
+      <h2>Nuevo Usuario</h2>
+      <form>
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <label for="nombre">Nombre* :</label>
+          <input type="text" autofocus id="nombre" placeholder="Juan" required/><br/><br/>
+          <label for="apellidos">Apellidos* :</label>
+          <input type="text" id="apellidos" placeholder="Garcia" required/><br/><br/>
+          <label for="masculino">Sexo* :</label>
+          <input type="radio" name="sexo" id="masculino" value="masculino" required>
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sexo" id="femenino" value="femenino" required>
+          <label for="femenino">Femenino</label>
+          <input type="radio" name="sexo" id="otro" value="otro" required>
+          <label for="otro">Otro</label><br/><br/>
+          <label for="fecha-nacimiento">Fecha de nacimiento :</label>
+          <input type="date" id="fecha-nacimiento" required/><br/><br/>
+          <label for="edad">Edad :</label>
+          <input type="number" min="15" max="110" id="edad" placeholder="15"/><br/><br/>
+          <label for="dni">DNI* :</label>
+          <input type="text" pattern="[0-9]{8}[A-Z]" id="dni" placeholder="11111111A" required/><br/><br/>
+          <label for="color">Color Favorito :</label>
+          <input type="color" id="color"/><br/><br/>
+        </fieldset><br/><br/>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label for="direccion">Dirección :</label>
+          <input type="text" id="direccion" placeholder="Calle Nueva n 1"/><br/><br/>
+          <label for="cod-postal">Código Postal* :</label>
+          <input type="text" pattern="[0-9]{5}" id="cod-postal" placeholder="01000" required/><br/><br/>
+          <label for="telefono">Télefono :</label>
+          <input type="tel" id="telefono" placeholder="666666666"/><br/><br/>
+          <label for="correo">Correo :</label>
+          <input type="email" id="correo" placeholder="nuevo@correo.es"/><br/><br/>
+        </fieldset><br/><br/>
+        <fieldset>
+          <legend>Datos de la tarjeta de crédito</legend>
+          <label for="tarjeta">Tarjeta de crédito :</label>
+          <input type="text" pattern="[0-9]{16}" id="tarjeta" placeholder="0000000000000000"/><br/><br/>
+          <label for="mes">Fecha de caducidad :</label>
+          <select id="mes">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+         </select>
+          <select id="año">
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+         </select><br/><br/>
+         <label for="ccv">CCV :</label>
+          <input type="text" pattern="[0-9]{3}" id="ccv" placeholder="000"/><br/><br/>
+        </fieldset><br/><br/>
+        <input type="checkbox" name="politica-priv" id="politica-priv" value="acepta" required>
+        <label for="politica-priv">Acepta <a href="https://www.lipsum.com/">la politica de privacidad</a>*</label><br/><br/>
+        <legend>Los campos con * son obligatorios</legend><br/><br/>
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="Limpiar">
+      </form> <br/><br/> <br/><br/>
+    </section>      
+    <aside>
+      <h3>Opiniones</h3>
+      <p>Me gusta mucho esta página.</p>
+    </aside>
+    <footer>
+      <h4>Avisos legales</h4>
+      <a href="#">Política de cookies</a>
+      <h4>Redes sociales</h4>
+      <a href="https://facebook.com"><img src="/images/facebook.png" alt="facebook"></a>
+      <a href="https://twitter.com"><img src="/images/twitter.png" alt="twitter"></a>
+      <a href="https://instagram.com"><img src="/images/instagram.png" alt="instagram"></a>
+  </footer>
+  </body>  
+</html>

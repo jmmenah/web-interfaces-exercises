@@ -1,0 +1,33 @@
+p{
+    font-family: monospace;
+}
+.titulo{
+    font-size: 15px;
+}
+#lorem{
+    color: dimgray;
+}
+p a:hover{
+    color:red;
+}
+p > a:link{
+    color: black;
+}
+p a:visited{
+    color: darkblue;
+}
+p a:active{
+    color: green;
+}
+
+h1 + h2 { 
+    color: red;
+}
+
+p a[href*="#"] {
+    font-size: 15px;
+}
+
+p a::after {
+    content: "→";
+  }

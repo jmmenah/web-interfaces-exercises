@@ -1,0 +1,105 @@
+header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1{
+    position: relative;
+    display: inline;
+    top: 10%;
+    left: 30%;
+}
+#logo img{
+    max-width: 150px;
+    position: relative;
+    display: inline;
+}
+nav {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+    display: inline-block;
+    padding: 10pt;
+    position: relative;
+    left: 30%;
+    top: 40%;
+}
+nav a{
+    padding: 10pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+nav a:link{
+    color: white;
+    text-decoration: none;
+}
+nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+aside{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    right: 0%;
+    top: 40%;
+    display: block;
+}
+#inicio{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 10%;
+    max-width: 800px;
+}
+section form{
+    max-height: 30%;
+}
+div img{
+    max-width: 400px;
+}
+footer{
+    position: relative;
+    bottom: -0%;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10pt;
+    background-color: blue;
+    padding: 1%;
+}
+footer a{
+    padding: 10pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+    display: inline;
+}
+footer a img{
+    max-width: 20px;
+}
+footer a:link{
+    color: white;
+    text-decoration: none;
+}
+footer a:visited{
+    color: white;
+    text-decoration: none;
+}
+table{
+    position: relative;
+    left: 30%;
+    top: 60%;
+}
+table, th, tr {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+#formu{
+    position: relative;
+    top: 30%;
+    left: 30%;
+    font-size: 10pt;
+    max-width: 50%;
+    max-height: 40%;
+}
+h4 {
+    display: inline;
+    color: white;
+}

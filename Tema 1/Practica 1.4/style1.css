@@ -1,0 +1,17 @@
+h1{
+    color: white !important;
+}
+p{
+    color: white;
+}
+.pregunta{
+    font-family: Arial;
+    font-weight: bold;
+}
+.respuesta{
+    font-family: 'Lucida Sans';
+    font-weight: lighter;
+}
+#pregunta1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

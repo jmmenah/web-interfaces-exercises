@@ -1,0 +1,34 @@
+caption{
+    background-color: khaki;
+}
+table{
+    border-color: red;
+    border-width: 0.15em;
+    text-align: center;
+}
+thead,tbody{
+    color: blue;
+}
+th,td{
+    border-color: black;
+    border-style: solid;
+}
+#rojo{
+    border-color: red;
+    border-style: solid;
+}
+thead,th{
+    background-color: lightblue;
+}
+tbody{
+    background-color: plum;
+}
+#boton{
+    background-color: #bba38d;
+}
+#azulclaro{
+    background-color: lightblue;
+}
+#khaki{
+    background-color: khaki;
+}

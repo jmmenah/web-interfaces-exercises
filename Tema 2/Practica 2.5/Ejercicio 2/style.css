@@ -1,0 +1,20 @@
+table,thead, tbody{
+    text-align: center;
+    border-color: solid #333;
+    font-family: Arial;
+    border-collapse: collapse;
+}
+thead{
+    background-image: url(imagenes/fondo_gris.gif);
+}
+.euro ,.dolar ,.yen ,.libra{
+    background-color: #E6F3FF;
+    text-align: left;
+    padding: 0.2em;
+}
+.par{
+    background-color:#FFFFCC;
+}
+tr:hover{
+    background-color: #FFFF66;
+}

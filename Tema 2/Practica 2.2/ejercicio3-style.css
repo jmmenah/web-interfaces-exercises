@@ -1,0 +1,18 @@
+strong::before {
+    content: "¡";
+}
+strong::after {
+    content: "!";
+}
+p::first-letter {
+    font-size: 130%;
+}
+p::first-line {
+    background-color: red;
+}
+li:first-child{
+    color: green;
+}
+li:last-child{
+    color: red;
+}

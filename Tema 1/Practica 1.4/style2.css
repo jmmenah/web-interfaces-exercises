@@ -1,0 +1,30 @@
+body{
+    background: #0602fc;
+}
+h1{
+    color: yellow;
+}
+h2{
+    color: seagreen;
+}
+a:hover{
+    color: white;
+}
+a{
+    color: white;
+}
+p{
+    color: yellow !important;
+}
+.pregunta{
+    font-family: Arial;
+    font-weight: bold;
+    
+}
+.respuesta{
+    font-family: 'Lucida Sans';
+    font-weight: lighter;
+}
+li{
+    color: silver;
+}
