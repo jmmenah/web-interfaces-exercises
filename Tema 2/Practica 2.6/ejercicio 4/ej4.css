@@ -1,0 +1,105 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#diseñado{
+    position: fixed;
+    right: 7%;
+    bottom: 5%;
+    background-color: red;
+    width: 100px;
+    color: white;
+    padding: 10px;
+}
+header{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: lightblue;
+    padding: 31px;
+    width: 100%;
+    height: 10%;
+}
+header h1,h2{
+    display: inline;
+    padding: 10px;
+}
+nav{
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    height: 100%;
+    background-color: rgb(255, 255, 128);
+    width: 20%;
+}
+nav h1,h2{
+    padding: 10px;
+}
+main{
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    height: 100%;
+    width: 60%;
+    background-color: rgb(195, 184, 255);
+}
+main h1{
+    padding: 10px;
+}
+article{
+    width: 230px;
+    height: 230px;
+    background-color: salmon;
+    align-items: center;
+}
+article h1,h2{
+    display: inline;
+}
+#a1{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+#a2{
+    position: absolute;
+    left: 65%;
+    top: 15%;
+}
+#a3{
+    position: absolute;
+    left: 5%;
+    top: 60%;
+}
+#a4{
+    position: absolute;
+    left: 65%;
+    top: 60%;
+}
+aside{
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    height: 100%;
+    width: 20%;
+    background-color: rgb(148, 129, 252);
+}
+aside div{
+    background-color: rgb(57, 31, 231);
+    width: 150px;
+    height: 150px;
+    padding: 50 px;
+    margin: 50px;
+}
+footer{
+    background-color: lightblue;
+    position: absolute;
+    left: 0%;
+    bottom: -40%;
+    background-color: lightblue;
+    padding: 30px;
+    width: 100%;
+    height: 10%;
+}
+footer h1,h2{
+    display: inline;
+    padding: 10px;
+}
