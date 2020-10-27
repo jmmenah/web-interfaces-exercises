@@ -1,0 +1,75 @@
+
+.container{
+    height: 1000px;
+    width: 100%;
+    display:grid;
+    grid-template-areas: "header header header header"
+    "nav main main aside"
+    "nav main main aside"
+    "nav main main aside"
+    "footer footer footer footer";
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#diseñado{
+    background-color: red;
+    color: white;
+    position: fixed;
+    right: 7%;
+    bottom: 5%;
+    width: 100px;
+}
+header{
+    background-color: lightblue;
+    grid-area: header;
+
+}
+header h1,h2{
+    display: inline;
+    padding: 10px;
+}
+nav{
+    background-color: rgb(255, 255, 128);
+    grid-area: nav;
+}
+nav h1,h2{
+    padding: 10px;
+}
+main{
+    background-color: rgb(195, 184, 255);
+    grid-area: main;
+    justify-items: center;
+    padding: 10px;
+}
+article{
+    background-color: salmon;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    height: 200px;
+    width: 300px;
+
+}
+article h1,h2{
+    display: inline;
+}
+aside{
+    background-color: rgb(148, 129, 252);
+    grid-area: aside;
+    padding: 10px;
+    justify-items: center;
+}
+aside div{
+    background-color: rgb(57, 31, 231);
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+}
+footer{
+    grid-area: footer;
+}
+footer h1,h2{
+    display: inline;
+}
