@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <title>Ayuntamiento de Torredelcampo - Contacto</title>
+    <link rel="shortcut icon" href="images/logo.ico"/>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+        <a href="index.html"><h1>AYUNTAMIENTO DE TORREDELCAMPO</h1></a>
+    </header>
+    <nav>
+        <div id="menu">
+			<ul class="nav">
+				<li><a href="#">El Ayuntamiento</a>
+					<ul>
+						<li><a href="#">Concejalías</a>
+							<ul>
+								<li><a href="#">Cultura</a></li>
+                                <li><a href="#">Deporte</a></li>
+                                <li><a href="#">Igualdad</a></li>
+                                <li><a href="#">Juventud</a></li>
+							</ul>
+					</ul>
+				</li>
+				<li><a href="elpueblo.html">El Pueblo</a>
+					<ul>
+						<li><a href="historia.html">Historia</a>
+						</li>
+						<li><a href="#">Turismo</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="contacto.html">Contacto</a>
+				</li>
+				<li><a href="#">Sede Electronica</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    <main>
+        <h2>Contacto</h2>
+        <form action="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Nombre Apellidos"><br><br>
+            <label for="mail">Correo electrónico</label>
+            <input type="email" id="mail" placeholder="nombre@correo.com"><br><br>
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+                <option value="problema">Problema</option> 
+                <option value="consulta">Consulta</option> 
+                <option value="mejora">Mejora</option>
+            </select><br><br>
+            <label for="descripcion">Descripción</label><br><br>
+            <textarea id="descripcion" rows="10" cols="30"></textarea><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+    <footer>
+        <table id="social">
+            <tr>
+                <td><a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram"></a></td>
+                <td><a href="http://www.twitter.com"  target="_blank"><img src="images/twitter.png" alt="twitter"></a></td>
+                <td><a href="http://www.facebook.com"  target="_blank"><img src="images/facebook.png" alt="facebook"></a></td>
+            </tr>
+        </table>
+    </footer>
+    </div>
+</body>
+</html>
