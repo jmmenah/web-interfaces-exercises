@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "starWars";
+    src: url("/starWars.ttf");
+}
+
+h1,h2 {
+    font-family: starWars;
+}
+
+footer img{
+    width: 35px;
+    height: 35px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color:red;
+}
+a:visited{
+    color: grey;
+}
+#personajes li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    width:30%;
+}
+#personajes li:nth-child(odd){
+    list-style-image: url('/imagenes/jedi.png');
+    background-color: lightyellow;
+    border: blue solid;
+    color: blue;
+}
+#personajes li:nth-child(even){
+    list-style-image: url('/imagenes/sith.png');
+    background-color: black;
+    border: red solid;
+    color: red;
+}
+.tri1{
+    text-transform: uppercase;
+}
+.tri2{
+    font-weight: bold;
+}
+.tri3{
+    font-style: italic ;
+}
+.original{
+    font-size: 200%;
+    border-radius: 16px 16px 16px 16px;
+}
+#peliculas{
+    border: 1px solid #000;
+    text-align: center;
+}
+#peliculas tbody tr:nth-child(-n+9){
+    background-color: green;
+    color: white;
+    font-style: italic;
+}
+#peliculas tbody tr:nth-child(-n+6){
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+#peliculas tbody tr:nth-child(-n+3){
+    background-color: blue;
+    color: white;
+    font-weight: bolder;
+}

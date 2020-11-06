@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Nuevo Usuario</title>
+    <link rel="shortcut icon" href="imagenes/logo.png"/>
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo Star Wars" id="logo">
+        <h1>Juan Manuel Mena Hernández</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="nuevousuario.html">Nuevo Usuario</a></li>
+        </ul>
+    </nav>
+    <a href="#final">Final de Página</a>
+    <h2>Nuevo Fan del Club Star Wars España</h2>
+    <form action="post">
+        <fieldset>
+            <legend>Datos Personales</legend><br>
+            <label for="nombre">Nombre*:</label>
+            <input name="nombre" id="nombre" type="text" required/><br><br>
+            <label for="apellidos">Apellidos:</label>
+            <input name="apellidos" id="apellidos" type="text"/><br><br>
+            <label for="direccion">Direccion:</label>
+            <input name="direccion" id="direccion" type="text"/><br><br>
+            <label for="codigopostal">Codigo Postal:</label>
+            <input name="codigopostal" id="codigopostal" type="number" min="1000" max="52999"/><br><br>
+            <label for="telefono">Telefono:</label>
+            <input name="telefono" id="telefono" type="text"/><br><br>
+            <label for="dni">DNI*:</label>
+            <input name="dni" id="dni" type="text" pattern="[0-9]{8}[A-Z]{1}" required placeholder="11111111A"/><br><br>
+            <label for="fechanacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechanacimiento" id="fechanacimiento"><br><br>
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo" name="correo" placeholder="correo@correo.com"><br><br>
+          </fieldset>
+          <fieldset>
+              <legend>Datos Bancarios</legend><br>
+              <label for="numerotarjeta">Numero de tarjeta de credito*:</label>
+              <input type="text" id="numerotarjeta" name="nunerotarjeta" pattern="[0-9]{16} required"><br><br>
+              <label for="fechacaducidad">Fecha de caducidad</label>
+              <input type="month" id="fechacaducidad" name="fechacaducidad"><br><br>
+              <label for="ccv">CCV:</label>
+              <input type="text" id="ccv" name="ccv" placeholder="000"/><br><br>
+          </fieldset>
+          <fieldset>
+              <legend>Area de Fan</legend><br>
+              <label for="momento">Cuentanos tu momento favorito de la saga</label><br><br>
+              <textarea id="momento" rows="10" cols="50"></textarea><br><br>
+          </fieldset>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+    </form>
+    <a href="#logo">Principio de la pagina</a>
+    <footer id="final">
+        <table id="social">
+            <tr>
+                <td><a href="http://www.instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="instagram"></a></td>
+                <td><a href="http://www.twitter.com"  target="_blank"><img src="imagenes/twitter.png" alt="twitter"></a></td>
+                <td><a href="http://www.facebook.com"  target="_blank"><img src="imagenes/facebook.png" alt="facebook"></a></td>
+            </tr>
+        </table>
+        <a href="https://www.lipsum.com/">Derechos reservados</a>
+    </footer>
+</body>
+</html>
