@@ -1,0 +1,139 @@
+
+.container{
+    height: 1000px;
+    width: 100%;
+    display:grid;
+    grid-template-areas: "header header header header header"
+    "nav main main main aside"
+    "nav main main main aside"
+    "nav main main main aside"
+    "footer footer footer footer footer";
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#diseñado{
+    background-color: red;
+    color: white;
+    position: fixed;
+    right: 7%;
+    bottom: 5%;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+}
+header{
+    background-color: lightblue;
+    grid-area: header;
+
+}
+header h1,h2{
+    display: inline;
+    padding: 10px;
+}
+header img{
+    width: 5%;
+}
+nav{
+    background-color: rgb(255, 255, 128);
+    grid-area: nav;
+    width: 100%;
+}
+nav li{
+    padding: 30px;
+    margin: 30px;
+}
+nav h1,h2{
+    padding: 10px;
+}
+main{
+    background-color: rgb(195, 184, 255);
+    grid-area: main;
+    justify-items: center;
+    padding: 10px;
+}
+article{
+    background-color: salmon;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    height: 200px;
+    width: 25%;
+
+}
+article img{
+    width: 100%;
+}
+article h1,h2{
+    display: inline;
+}
+aside{
+    background-color: rgb(148, 129, 252);
+    grid-area: aside;
+    padding: 10px;
+    justify-items: center;
+}
+aside div{
+    background-color: rgb(57, 31, 231);
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    grid-area: footer;
+}
+footer h1,h2{
+    display: inline;
+}
+footer a img{
+    width: 4%;
+}
+@media (max-width: 900px){
+    .container{
+        width: 100%;
+        display:grid;
+        grid-template-areas: "header header header header"
+        "nav main main main"
+        "nav main main main"
+        "aside aside aside aside"
+        "footer footer footer footer";
+    }
+    header img{
+        width: 10%;
+    }
+    aside div{
+        width: 25%;
+        display: inline-block;
+    }
+    article{
+        width: 30%;
+        display: inline-block;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+        display:grid;
+        grid-template-areas: "header header header"
+        "nav nav nav"
+        "main main main"
+        "aside aside aside"
+        "footer footer footer";
+    }
+    header img{
+        width: 15%;
+    }
+    article{
+        width: 80%;
+        display: inline-block;
+    }
+    article img{
+        width: 80%;
+        height: 80%;
+    }
+    aside div{
+        width: 25%;
+        display: inline-block;
+    }
+}
