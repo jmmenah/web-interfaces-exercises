@@ -9,7 +9,8 @@
 <body>
     <form action="#">
         <fieldset id="personales">
-            <legend>Datos Personales</legend><br>
+            <legend>Datos Personales</legend>
+            <p>No te olvides del segundo apellido</p>
             <label for="nombre">Nombre * </label>
             <input type="text" name="nombre" id="nombre" required><br><br>
             <label for="ap1">Primer Apellido * </label>
@@ -22,7 +23,8 @@
             <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Z]" placeholder="11111111A"><br><br>
         </fieldset>
         <fieldset id="domicilio">
-            <legend>Domicilio</legend><br>
+            <legend>Domicilio</legend>
+            <p>Es necesario una calle y un numero</p>
             <label for="calle">Calle, número, piso y puerta </label>
             <input type="text" name="calle" id="calle" required placeholder="Calle Ancha nº 30, 3º C Derecha"><br><br>
             <label for="codigopostal">Código Postal * </label>
@@ -37,7 +39,8 @@
             </select>
         </fieldset>
         <fieldset id="bancarios">
-            <legend>Datos Bancarios</legend><br>
+            <legend>Datos Bancarios</legend>
+            <p>No olvides el CCV</p>
             <label for="numerotarjeta">Numero de tarjeta * </label>
             <input type="text" id="numerotarjeta" name="numerotarjeta" pattern="[0-9]{16}" placeholder="0000000000000000" required><br><br>
             <label for="caducidad">Fecha de caducidad * </label>

@@ -16,6 +16,13 @@ form{
 }
 fieldset:hover{
     background-color: aquamarine;
+
+}
+p {
+    display: none;
+}
+fieldset:hover p {
+    display: block;
 }
 fieldset{
     border-radius: 10px;
