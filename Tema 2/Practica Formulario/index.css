@@ -1,0 +1,33 @@
+body{
+    font-family: monospace;
+}
+form{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+#personales{
+    grid-column: span 2;
+}
+#bancarios{
+    grid-column: span 2;
+}
+#domicilio{
+    grid-column: span 2;
+}
+fieldset:hover{
+    background-color: aquamarine;
+}
+fieldset{
+    border-radius: 10px;
+}
+@media (max-width: 800px){
+    #personales{
+        grid-column: span 4;
+    }
+    #bancarios{
+        grid-column: span 4;
+    }
+    #domicilio{
+        grid-column: span 4;
+    }
+}
