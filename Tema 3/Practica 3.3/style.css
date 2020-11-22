@@ -1,0 +1,27 @@
+#video{
+    display: none;
+    margin: 10px;
+    padding: 10px;
+}
+#music{
+    display: none;
+    margin: 10px;
+    padding: 10px;
+}
+img{
+    display: inline;
+    float: left;
+}
+div{
+    display: none;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border: blue solid;
+}
+h3{
+    margin: 10px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+}

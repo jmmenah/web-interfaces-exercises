@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3.3</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="media/alonso.jpg" alt="alonso" usemap="#image-map">
+    <map name="image-map">
+        <area alt="music" onclick="musicLoad()" onmouseover="musicInit()" onmouseout="musicPause()" coords="71,314,46" shape="circle">
+        <area alt="link" href="https://www.fernandoalonso.com/"  coords="268,489,183,402" shape="rect">
+        <area alt="video" onclick="videoLoad()" onmouseover="videoInit()" onmouseout="videoPause()" coords="280,57,294,47,308,45,324,48,335,51,345,52,354,50,363,50,375,50,391,53,399,58,411,57,419,49,430,43,445,45,459,53,470,54,478,62,486,72,501,74,515,74,526,80,548,83,560,89,576,93,598,93,610,93,630,94,644,96,660,102,675,109,694,107,719,109,723,116,713,120,699,125,691,129,698,140,687,146,661,135,627,136,598,137,578,140,569,145,577,167,581,188,582,206,579,233,570,261,558,284,552,297,543,315,539,337,531,363,533,388,531,422,522,450,512,462,510,473,514,492,455,509,465,494,478,470,477,430,480,396,481,369,473,369,453,391,435,387,444,360,455,327,424,298,403,252,402,220,430,207,451,193,468,183,469,164,444,172,402,172,393,151,379,116,380,95,366,86,346,78,319,74,305,77,286,72" shape="poly">
+    </map>
+    <div class="visor">
+        <h3>Reproduciendo video</h3>
+        <video id="video" width="320" height="240" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="visor">
+        <h3>Reproduciendo audio</h3>
+        <audio id="music" controls>
+            <source src="media/music.ogg" type="audio/ogg">
+            <source src="media/music.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
