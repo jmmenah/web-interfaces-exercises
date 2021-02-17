@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-primary">
+    <a class="navbar-brand text-light" href="#">Formulario de registro</a>
+  </nav><br>
+    <form class="container">
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Juan" required>
+            <p style="color: red;" id="nombreError"></p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" placeholder="Mena Hernández" required>
+            <p style="color: red;" id="apellidosError"></p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="fechanacimiento">Fecha de nacimiento</label>
+            <input type="text" data-date-format='dd/mm/yy' class="form-control datepicker" id="fechanacimiento" placeholder="dd/mm/aaaa" required>
+            <p style="color: red;" id="nacimientoError"></p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="dni">DNI</label>
+            <input type="text" class="form-control" id="dni" placeholder="12345678Z" required>
+            <p style="color: red;" id="dniError"></p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="sexo">Sexo</label>
+            <select class="form-control" id="sexo">
+                <option selected>Elige una opcion</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+              </select>
+              <p style="color: red;" id="sexoError"></p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Calle Llana nº4" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="codpostal">Código Postal</label>
+            <input type="text" class="form-control" id="codpostal" placeholder="23000" required>
+            <p style="color: red;" id="codpostalError"></p>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="poblacion">Poblacíon</label>
+            <input type="text" class="form-control" id="poblacion" placeholder="Jaén" required>
+            <p style="color: red;" id="poblacionError"></p>
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="pais">País</label>
+            <input type="text" class="form-control" id="pais" placeholder="España" required>
+            <p style="color: red;" id="paisError"></p>
+          </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="tarjeta">Número de la tarjeta de crédito</label>
+              <input type="text" class="form-control" id="tarjeta" placeholder="0000000000000000" required>
+              <img src="/images/visa.png" class="img-fluid" style="max-width: 30px;" id="visa" alt="visa">
+              <img src="/images/mastercard.png" class="img-fluid" style="max-width: 30px;" id="mastercard" alt="mastercard">
+              <p style="color: red;" id="tarjetaError"></p>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="caducidad">Fecha de caducidad</label>
+                <input type="month" class="form-control" id="caducidad" placeholder="2021-02" required>
+              </div>
+            <div class="col-md-2 mb-3">
+              <label for="ccv">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="000" required>
+              <p style="color: red;" id="cvvError"></p>
+            </div>
+          </div>
+        <button class="btn btn-danger" type="reset">Borrar</button>
+        <button class="btn btn-primary" id="enviar" type="button">Enviar</button>
+        <p style="color: red;" id="error"></p>
+    </form>
+    <br>
+    <footer class="bg-primary d-flex justify-content-center">
+      <p class="navbar-brand text-light">2020</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <script src="index.js"></script>
+</body>
+</html>
