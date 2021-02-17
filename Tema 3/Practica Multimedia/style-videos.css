@@ -1,0 +1,130 @@
+body{
+    background-color: cadetblue;
+    font-family: monospace;
+}
+header{
+    display: grid;
+    justify-items: center;
+    grid-area: header;
+    color: white;
+}
+nav{
+    grid-area: nav;
+    display: grid;
+    justify-items: center;
+}
+#menu {
+	font-family:monospace;
+	opacity: 87%;
+    margin: 20px;
+    padding: 20px;
+}
+ul, ol {
+	list-style:none;
+}
+.nav > li {
+	float:left;
+}
+.nav li a {
+	background-color:#979797;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+}
+.nav li a:hover {
+	background-color:#434343;
+}
+.contendor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    grid-template-areas: "header header header header header"
+    "nav nav nav nav nav"
+    "videos videos videos videos videos"
+    "videos videos videos videos videos"
+    "videos videos videos videos videos";
+}
+.vista{
+    display: inline-block;
+    margin: 10px;
+}
+.videos{
+    grid-area: videos;
+    display: inline;
+}
+.vista button{
+    display: inline-block;
+}
+button img{
+    height: 10px;
+    width: auto;
+}
+#info{
+    display: inline;
+    position: fixed;
+    right: 100px;
+    top:100px;
+    z-index: 10;
+    color: white;
+}
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+#logo{
+    -webkit-animation: 1s rotate linear infinite;
+    animation: 1s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100px;
+    display: inline;
+    position: fixed;
+    right: 100px;
+    top:10px;
+    z-index: 10;
+}
+
+@media (max-width: 800px) {
+    .contendor{
+        grid-template-areas: "header header header header header"
+    "nav nav nav nav nav"
+    "videos videos videos videos videos"
+    "videos videos videos videos videos"
+    "videos videos videos videos videos";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    }
+    #info{
+        display: inline;
+        position: fixed;
+        right: 240px;
+        top:160px;
+        z-index: 10;
+    }
+    #logo{
+        -webkit-animation: 1s rotate linear infinite;
+        animation: 1s rotate linear infinite;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        width: 50px;
+        display: inline;
+        position: fixed;
+        right: 240px;
+        top:140px;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #info{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+}

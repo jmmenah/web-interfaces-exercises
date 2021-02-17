@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsYouTify</title>
+    <link rel="stylesheet" href="style-videos.css">
+    <script src="functions.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+    <header><h1>InsYouTify</h1></header>
+    <nav>
+        <div id="menu">
+			<ul class="nav">
+				<li><a href="index.html">Fotos</a>
+				</li>
+				<li><a href="videos.html">Videos</a>
+				</li>
+				<li><a href="musica.html">Musica</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    <div id="infodiv">
+        <p id="info"></p>
+        <img src="media/instagram.svg" alt="logo" id="logo" class="rotate">
+    </div>
+    <div class="videos">
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(0);" onmouseout="videoPause(0);" onclick="videoReload(0);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(0);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(0);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(1);" onmouseout="videoPause(1);" onclick="videoReload(1);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(1);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(1);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(2);" onmouseout="videoPause(2);" onclick="videoReload(2);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(2);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(2);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(3);" onmouseout="videoPause(3);" onclick="videoReload(3);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(3);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(3);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(4);" onmouseout="videoPause(4);" onclick="videoReload(4);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(4);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(4);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(5);" onmouseout="videoPause(5);" onclick="videoReload(5);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(5);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(5);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(6);" onmouseout="videoPause(6);" onclick="videoReload(6);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(6);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(6);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(7);" onmouseout="videoPause(7);" onclick="videoReload(7);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(7);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(7);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+        <div class="vista" onmouseover="infoVideo();" onmouseout="clearVideo();">
+        <video class="video" width="250" height="180" onmouseover="videoInit(8);" onmouseout="videoPause(8);" onclick="videoReload(8);" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video><br>
+        <button onclick="like(8);"><img src="media/green.png" alt="verde"></button>
+        <button onclick="dislike(8);"><img src="media/red.png" alt="rojo"></button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

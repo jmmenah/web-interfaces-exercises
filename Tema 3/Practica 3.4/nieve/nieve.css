@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+}
+#container{
+    background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
+    width: 420px;
+    height: 480px;
+    position: relative;
+}
+.snowflake {
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+}
+.snowflake.f1 {
+    left: 40px;
+}
+.snowflake.f2 {
+    font-size: 1.8em;
+    left: 120px;
+}
+.snowflake.f3 {
+    left: 200px;
+}
+.snowflake.f4 {
+    font-size: 1.5em;
+    left: 280px;
+}
+/* ANIMACIONES Y TRANSFORMACIONES */
+@-webkit-keyframes nieve{
+    from {top: -10px;}
+    to {top: 480px;}
+}
+@keyframes nieve{
+    from {top: -10px;}
+    to {top: 480px;}
+}
+       
+@-webkit-keyframes snowflake{
+     0% { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+     100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+}
+
+@keyframes snowflake{
+    0% { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+    100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+}
+
+#snow div {
+    position: absolute;
+    top: -40px;
+    -webkit-animation-name: nieve,snowflake;
+    animation-name:nieve,snowflake;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;   
+}
+.snowflake.f1 {
+    left: 40px;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;   
+}
+.snowflake.f2 {
+    font-size: 1.8em;
+    left: 120px;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;    
+}
+.snowflake.f3 {
+    left: 200px;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;    
+}
+.snowflake.f4 {
+    font-size: 1.5em;
+    left: 280px;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;    
+} 
