@@ -1,0 +1,12 @@
+img{
+    max-width: 300px;
+}
+.scale{
+    transform: scale(1.5);
+}
+#color{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}

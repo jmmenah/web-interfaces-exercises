@@ -1,0 +1,28 @@
+$main-color:rgb(248, 4, 4);
+$text-color:white;
+$alert-color:rgba(255, 251, 0, 0.685);
+$alert-text-color:red;
+$sec-color:green;
+@mixin color-nav {
+    background-color:$main-color;
+    color:$text-color;
+  }
+.nav{
+    @include color-nav;
+}
+.alert-color{
+    background-color: $alert-color;
+    color: $alert-text-color;
+}
+footer{
+    color:$text-color;
+    background-color: $sec-color;
+}
+.modal-color{
+    .modal-header{
+        @extend .nav;
+    }
+    .btn{
+        background-color: $sec-color;
+    }
+}

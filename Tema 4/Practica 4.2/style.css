@@ -1,0 +1,36 @@
+.navbar{
+    background-color: blue;
+    color: white;
+}
+#carouselExampleIndicators{
+    width: 80%;
+}
+div{
+    margin: 10px;
+}
+button a{
+    color: white;
+}
+button a:visited{
+    color: white;
+}
+#contacto{
+    width: 40%;
+}
+.jumbotron{
+    background-color:lightblue;
+    padding: 10px;
+}
+.badge{
+    background-color: blue;
+}
+.card{
+    float: left;
+    margin: 10px;
+}
+.table{
+    width: 50%;
+}
+.card{
+    height: 343px;
+}
